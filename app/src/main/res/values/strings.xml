@@ -3,6 +3,13 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+    
+    <string name="activity_auth_title_welcome">Добро пожаловать!</string>
+    <string name="activity_auth_enter_label">ВХОД</string>
+    <string name="activity_auth_register_label">РЕГИСТРАЦИЯ</string>
+    <string name="activity_auth_email_username_input">Эл. почта или имя пользователя</string>
+    <string name="activity_auth_password_input">Пароль</string>
+    <string name="activity_auth_recover_password">Восстановить пароль</string>
+    <string name="activity_auth_return_to_main_label">Вернутсья на главную</string>
 </resources>
