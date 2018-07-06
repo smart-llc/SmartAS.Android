@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".authActivities.AuthActivity"></activity>
+        <activity android:name=".authActivities.AuthActivity" />
+        <activity android:name=".authActivities.RegisterActivity"></activity>
     </application>
 
 </manifest>

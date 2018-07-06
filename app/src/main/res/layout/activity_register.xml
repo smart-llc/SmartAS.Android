@@ -4,32 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ivan.smartasreborn.authActivities.AuthActivity">
+    tools:context="com.example.ivan.smartasreborn.authActivities.RegisterActivity">
 
     <ImageView
-        android:id="@+id/activity_auth_image"
+        android:id="@+id/activity_register_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/activity_auth_title"
+        android:id="@+id/activity_register_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/activity_auth_image"
+        android:layout_below="@+id/activity_register_image"
         android:text="@string/activity_auth_title_welcome"/>
 
     <RelativeLayout
-        android:id="@+id/activity_auth_input_data_view_holder"
+        android:id="@+id/activity_register_input_data_view_holder"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/activity_auth_title">
+        android:layout_below="@+id/activity_register_title">
 
         <TextView
-            android:id="@+id/activity_auth_enter_label"
+            android:id="@+id/activity_register_enter_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -43,42 +43,41 @@
             android:text="@string/activity_auth_register_label"/>
 
         <EditText
-            android:id="@+id/activity_auth_email_username_input"
+            android:id="@+id/activity_register_email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/activity_auth_enter_label"
-            android:hint="@string/activity_auth_email_username_input"/>
+            android:layout_below="@id/activity_register_enter_label"
+            android:hint="@string/activity_register_email_input"/>
 
         <EditText
-            android:id="@+id/activity_auth_password_input"
+            android:id="@+id/activity_register_username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/activity_auth_email_username_input"
-            android:hint="@string/activity_password_input"/>
+            android:layout_below="@id/activity_register_email_input"
+            android:hint="@string/activity_register_username_input"/>
 
-        <TextView
-            android:id="@+id/activity_auth_recover_password_label"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/activity_register_password_input"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/activity_auth_password_input"
-            android:layout_alignParentRight="true"
-            android:text="@string/activity_auth_recover_password" />
+            android:layout_below="@id/activity_register_username_input"
+            android:hint="@string/activity_password_input"/>
 
     </RelativeLayout>
 
     <Button
-        android:id="@+id/activity_auth_enter_btn"
+        android:id="@+id/activity_register_enter_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_auth_input_data_view_holder"
+        android:layout_below="@id/activity_register_input_data_view_holder"
         android:layout_centerHorizontal="true"
-        android:text="Войти"/>
+        android:text="Зарегистрироваться"/>
 
     <TextView
-        android:id="@+id/activity_auth_return_to_main_label"
+        android:id="@+id/activity_register_return_to_main_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_auth_enter_btn"
+        android:layout_below="@id/activity_register_enter_btn"
         android:layout_centerHorizontal="true"
         android:text="@string/activity_return_to_main_label"/>
 
