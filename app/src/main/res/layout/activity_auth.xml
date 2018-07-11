@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="com.example.ivan.smartasreborn.authActivities.AuthActivity">
 
     <ImageView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
@@ -19,67 +21,95 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/activity_auth_image"
+        android:textColor="@color/mainColor"
+        android:textSize="16sp"
         android:text="@string/activity_auth_title_welcome"/>
+
+    <TextView
+        android:id="@+id/activity_auth_enter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_auth_input_data_view_holder"
+        android:layout_alignStart="@+id/activity_auth_input_data_view_holder"
+        android:text="@string/activity_auth_enter_label"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/mainColor" />
+
+    <TextView
+        android:id="@+id/activity_auth_register_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_auth_input_data_view_holder"
+        android:layout_alignEnd="@+id/activity_auth_input_data_view_holder"
+        android:text="@string/activity_auth_register_label"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
 
     <RelativeLayout
         android:id="@+id/activity_auth_input_data_view_holder"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/activity_auth_title">
-
-        <TextView
-            android:id="@+id/activity_auth_enter_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:text="@string/activity_auth_enter_label"/>
-
-        <TextView
-            android:id="@+id/activity_auth_register_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="@string/activity_auth_register_label"/>
+        android:layout_centerVertical="true">
 
         <EditText
             android:id="@+id/activity_auth_email_username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/activity_auth_enter_label"
-            android:hint="@string/activity_auth_email_username_input"/>
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_shadow_edit_text"
+            android:hint="@string/activity_auth_email_username_input" />
 
         <EditText
             android:id="@+id/activity_auth_password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_auth_email_username_input"
-            android:hint="@string/activity_password_input"/>
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_shadow_edit_text"
+            android:hint="@string/activity_password_input" />
 
         <TextView
             android:id="@+id/activity_auth_recover_password_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/activity_auth_password_input"
             android:layout_alignParentRight="true"
-            android:text="@string/activity_auth_recover_password" />
+            android:layout_below="@id/activity_auth_password_input"
+            android:text="@string/activity_auth_recover_password"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mainColor" />
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/activity_auth_enter_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_auth_input_data_view_holder"
+        android:layout_height="40dp"
+        android:layout_above="@id/activity_auth_return_to_main_label"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button_main_color"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:paddingRight="36dp"
+        android:paddingLeft="36dp"
+        android:layout_marginBottom="28dp"
         android:text="Войти"/>
 
     <TextView
         android:id="@+id/activity_auth_return_to_main_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_auth_enter_btn"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
         android:text="@string/activity_return_to_main_label"/>
 
 </RelativeLayout>
