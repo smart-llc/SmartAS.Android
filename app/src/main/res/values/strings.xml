@@ -14,4 +14,8 @@
     <string name="activity_password_input">Пароль</string>
     <string name="activity_auth_recover_password">Восстановить пароль</string>
     <string name="activity_return_to_main_label">Вернутсья на главную</string>
+    <string name="activity_main_auth_necessary">Необходимо авторизоваться, чтобы выполнять или создавать заказы</string>
+    <string name="activity_recover_pass_title">Восстановление пароля</string>
+    <string name="activity_recover_pass_info_label">Ведите адрес эл.почты или имя пользователя</string>
+    <string name="activity_recover_pass_input_hint">Эл.почта или имя пользователя</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.ivan.smartasreborn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.ivan.smartasreborn.authActivities.AuthActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity
         header.findViewById(R.id.content_main_nav_bar_header_auth_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "GO TO AUTH", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), AuthActivity.class));
             }
         });
 

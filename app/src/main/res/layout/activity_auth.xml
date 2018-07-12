@@ -58,32 +58,34 @@
             android:id="@+id/activity_auth_email_username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
-            android:elevation="3dp"
-            android:translationZ="3dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/round_shadow_edit_text"
-            android:hint="@string/activity_auth_email_username_input" />
+            android:elevation="3dp"
+            android:hint="@string/activity_auth_email_username_input"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:translationZ="3dp" />
 
         <EditText
             android:id="@+id/activity_auth_password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_auth_email_username_input"
-            android:textSize="14sp"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
-            android:elevation="3dp"
-            android:translationZ="3dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/round_shadow_edit_text"
-            android:hint="@string/activity_password_input" />
+            android:elevation="3dp"
+            android:hint="@string/activity_password_input"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:translationZ="3dp" />
 
         <TextView
             android:id="@+id/activity_auth_recover_password_label"

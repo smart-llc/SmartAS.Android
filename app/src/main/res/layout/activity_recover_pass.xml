@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivan.smartasreborn.authActivities.RecoverPassActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_recover_pass_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/activity_recover_pass_info_label"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_recover_pass_toolbar"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/mainColor"
+        android:text="@string/activity_recover_pass_info_label"/>
+
+    <EditText
+        android:id="@+id/activity_recover_pass_input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/activity_recover_pass_info_label"
+        android:hint="@string/activity_recover_pass_input_hint"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:elevation="3dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:translationZ="3dp"
+        android:background="@drawable/round_shadow_edit_text"/>
+
+    <Button
+        android:id="@+id/activity_recover_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_button_main_color"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:paddingRight="36dp"
+        android:paddingLeft="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="Отправить"/>
+
+</RelativeLayout>
