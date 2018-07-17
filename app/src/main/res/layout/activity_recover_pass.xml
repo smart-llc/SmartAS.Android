@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="com.example.ivan.smartasreborn.authActivities.RecoverPassActivity">
 
     <android.support.v7.widget.Toolbar
@@ -34,10 +35,8 @@
         android:hint="@string/activity_recover_pass_input_hint"
         android:textSize="14sp"
         android:gravity="center_vertical"
-        android:elevation="3dp"
         android:inputType="text"
-        android:padding="10dp"
-        android:translationZ="3dp"
+        android:padding="12dp"
         android:background="@drawable/round_shadow_edit_text"/>
 
     <Button
@@ -51,7 +50,7 @@
         android:textColor="@android:color/white"
         android:paddingRight="36dp"
         android:paddingLeft="36dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="60dp"
         android:text="Отправить"/>
 
 </RelativeLayout>
